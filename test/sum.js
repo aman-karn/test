@@ -5,10 +5,19 @@ const sum = {
     sub: function(a,b){
         return a-b;
     },
-    check:  function(firstName){
-        firstName =['Aman', 'Medhavi']
-        return firstName;
+    check: function(name)
+    {
+        name= ['Aman', 'Medhavi'];
+        return name;
+
+    },
+    user:  function(){
+      const user= {firstName:'Aman'}
+        user['lastName']='Karn'; 
+        return user;
+
     }
+   
 
 
 }

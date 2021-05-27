@@ -9,6 +9,10 @@ test('adds 4 - 3 to equal 1', () => {
 
 });
 
+test('Data retrival', () => {
+  expect(sum.check()).toContain('Aman');
+});
+
 test('Data available', () => {
-  expect(sum.check('Aman')).toContain('Aman');
+  expect(sum.user()).toEqual({firstName: 'Aman', lastName: 'Karn'});
 });
